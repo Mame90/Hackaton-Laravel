@@ -304,7 +304,7 @@
       </div>
     </div>
   </div>
-@endforeach
+
 
 
     <!-- Modal for Course Details -->
@@ -349,6 +349,7 @@
         </div>
     </div>
 </div>
+@endforeach
 
   </section>
 
