@@ -21,7 +21,7 @@
                     <img src="assets\img\courss.jpeg" alt="image-ici" width="110px">
                   </div>
                   <div class="col-sm " style="margin-left:0 ;">
-                    <a href="#" class="card-title">Voir cours</a>
+                    <a href="{{ route('mescours') }}" class="card-title">Voir cours</a>
                   </div>
                 </div>
               </div>
