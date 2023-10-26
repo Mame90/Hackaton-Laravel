@@ -78,10 +78,10 @@ Route::post('/ajouterProduit', [AdminController::class, 'store']);
 // Route::get('/produits', [ProduitController::class,'index'])->name('produits.ajouterProduit');
 // Route::get('/produits/{produit}', [ProduitController::class,'create'])->name('produits.create');
 // Route::post('/produits', [ProduitController::class,'store'])->name('produits.store');
-// Route::get('/produits/{produit}', [ProduitController::class,'show'])->name('produits.show');
-// Route::get('/produits/{produit}/edit', [ProduitController::class,'edit'])->name('produits.edit');
-// Route::put('/produits/{produit}', [ProduitController::class,'update'])->name('produits.update');
-// Route::delete('/produits/{produit}', [ProduitController::class,'destroy'])->name('produits.destroy');
+Route::get('/produits/{produit}', [ProduitController::class,'show'])->name('produits.show');
+Route::get('/produits/{produit}/edit', [ProduitController::class,'edit'])->name('produits.edit');
+Route::put('/produits/{produit}', [ProduitController::class,'update'])->name('produits.update');
+Route::delete('/produits/{produit}', [ProduitController::class,'destroy'])->name('produits.destroy');
 
 // // Routes pour les utilisateurs
 // Route::get('/utilisateurs', 'UtilisateurController@index')->name('utilisateurs.index');
