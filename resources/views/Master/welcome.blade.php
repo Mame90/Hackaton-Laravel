@@ -105,13 +105,13 @@
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/slides-1.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/slides-4.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-2.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/slides-5.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-3.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/slides-6.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
 
