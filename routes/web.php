@@ -3,11 +3,13 @@
 
 use function PHPSTORM_META\type;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CourseController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -188,6 +190,10 @@ Route::middleware(['auth'])->group(function () {
     // *****************************************************************************
 
 
+
+
+
+Route::get('/mescours', [CourseController::class, 'mescours'])->name('mescours');
 
     Route::middleware(['auth', 'role:admin'])->group(function () {
         Route::get('/teacher', [TeacherController::class,'create'])->name('admin.teacher.ajouter');
