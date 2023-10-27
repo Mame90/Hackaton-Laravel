@@ -4,9 +4,9 @@
 use function PHPSTORM_META\type;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\CourseController;
 
 
@@ -192,19 +192,26 @@ Route::middleware(['auth'])->group(function () {
 
 
 
+
 Route::get('/mescours', [CourseController::class, 'mescours'])->name('mescours');
 
+    Route::middleware(['auth', 'role:admin'])->group(function () {
+        Route::get('/teacher', [TeacherController::class,'create'])->name('admin.teacher.ajouter');
+        Route::post('/teacher', [TeacherController::class,'store'])->name('admin.Teacher.store');
+       
+        // Gestion des CRUD pour Enseignant
+        Route::get('/teachers', [TeacherController::class, 'index'])->name('admin.teachers.index');
+        Route::get('/teachers/{id}', [TeacherController::class, 'show'])->name('admin.teachers.show');
+        Route::get('/teachers/{id}/edit', [TeacherController::class, 'edit'])->name('admin.teachers.edit');
+        Route::put('/teachers/{id}', [TeacherController::class, 'update'])->name('admin.teachers.update');
+        Route::delete('/teachers/{id}', [TeacherController::class, 'destroy'])->name('admin.teachers.destroy');
+//    *******************************************************************************
+Route::get('/ajoutcours', [TeacherController::class,'ajoutcours'])->name('admin.teacher.ajoutercours');
+Route::post('/ajoutcours', [TeacherController::class,'ajoutcourStore'])->name('admin.Teacher.ajoutcourStore');
 
+   
+    });
 
-Route::get('/liste-professeurs', [TeacherController::class, 'listeProfesseurs'])->name('listeProf');
-
-
-
-
-Route::get('/voir-cours/{id}', [CourseController::class, 'voirCours'])->name('voir_cours');
-
-
-//-------------------------------------------------------
 // ***********************************************************************************************************
 
 
@@ -382,6 +389,25 @@ Route::middleware(['auth'])->group(function () {
 
 
 Route::get('/mescours', [CourseController::class, 'mescours'])->name('mescours');
+
+// *****************************************************************************
+
+
+
+
+Route::get('/mescours', [CourseController::class, 'mescours'])->name('mescours');
+
+
+
+Route::get('/liste-professeurs', [TeacherController::class, 'listeProfesseurs'])->name('listeProf');
+
+
+
+
+Route::get('/voir-cours/{id}', [CourseController::class, 'voirCours'])->name('voir_cours');
+
+
+//-------------------------------------------------------
 
 
 require __DIR__.'/auth.php';

@@ -106,7 +106,7 @@
             </div>
             <!-- Card Body -->
             <div class="card-body">
-            <img src="admin.jpg" alt="image espace admin">
+            <img src="assets/img/slides-5.jpg" class="img-fluid" alt="image espace admin">
     
           
                 <div class="chart-area">

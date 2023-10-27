@@ -29,6 +29,7 @@ class Course extends Model
         'description',
         'start_date',
         'end_date',
+            
         // Ajoutez d'autres colonnes ici
     ];
 }

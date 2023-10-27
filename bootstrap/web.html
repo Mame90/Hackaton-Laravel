@@ -1,0 +1,18 @@
+// *****************************************************************************
+
+
+
+
+Route::get('/mescours', [CourseController::class, 'mescours'])->name('mescours');
+
+
+
+Route::get('/liste-professeurs', [TeacherController::class, 'listeProfesseurs'])->name('listeProf');
+
+
+
+
+Route::get('/voir-cours/{id}', [CourseController::class, 'voirCours'])->name('voir_cours');
+
+
+//-------------------------------------------------------
