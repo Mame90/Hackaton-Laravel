@@ -3,7 +3,15 @@
   <div class="pagetitle">
     <h1>Popular Courses</h1>
   </div><!-- End Page Title -->
+  <div class="pagetitle">
+    <h1>Popular Courses</h1>
+  </div><!-- End Page Title -->
 
+  <section class="section dashboard">
+    <div class="row">
+      <!-- Left side columns -->
+      <div class="col-lg-8">
+        <div class="row">
   <section class="section dashboard">
     <div class="row">
       <!-- Left side columns -->

@@ -35,13 +35,17 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
         aria-expanded="true" aria-controls="collapseTwo">
         <!-- <i class="fa-light fa-bars" style="color: #e2e614;"></i> -->
-        <span style="font-size: 18px; font-weight:700; color:bolder" href="{{route('commandes.index')}}"><i class="fas fa-user"></i>Users</span>
+        <span style="font-size: 18px; font-weight:700; color:bolder" href="#"><i class="fas fa-user"></i>Gestion Utilisateur</span>
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <!-- <a class="collapse-item" href="{{route('commandes.index')}}">listes utilisateurs</a> -->
-            <a class="collapse-item" href="{{url('adminproduit')}}">Liste des Eleves</a>
-            <a class="collapse-item" href="#">Listes des Professeurs</a>
+            <a class="collapse-item" href="{{url('adminproduit')}}">Gestion des Eleves</a>
+            <a class="collapse-item" href="{{route('admin.teachers.index')}}">Listes des Professeurs</a>
+            <!-- <a class="collapse-item" href="{{route('admin.teacher.ajouter')}}">Ajouter un Professeur</a> -->
+            
+        <!--    <a class="collapse-item" href="#">Listes des Professeurs</a>
+            <a class="collapse-item" href="#">Listes des Professeurs</a> -->
         </div>
     </div>
 </li>
@@ -57,8 +61,10 @@
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Gestion Utilisateurs:</h6> 
-            <a class="collapse-item" href="#">Listes des cms</a>
+            <h6 class="collapse-header">Cours & Planing</h6> 
+            <a class="collapse-item" href="#">Listes des Cours</a>
+            <a class="collapse-item" href="{{route('admin.teacher.ajoutercours')}}">Ajouter Cours</a>
+            <a class="collapse-item" href="#">Voir le Planning</a>
             
             <!-- <a class="collapse-item" href="{{url('adminproduit')}}">Afficher Liste Produit</a> -->
             
