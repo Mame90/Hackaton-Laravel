@@ -99,6 +99,13 @@ public function ajoutcourStore(Request $request)
     
     
 }
+///-----------------------------------------
+
+public function listeProfesseurs()
+{
+    $teachers = Teacher::all();
+    return view('listeProf', ['teachers' => $teachers]);
+}
 
 // *********************************
 }

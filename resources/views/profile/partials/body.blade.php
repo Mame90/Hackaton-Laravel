@@ -28,6 +28,17 @@
 
               <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <div class="row">
+                  <div class="col" style="margin-left:0;">
+                    <img src="assets\img\professeur.jpeg" alt="image-ici" width="110px">
+                  </div>
+                  <div class="col-sm " style="margin-left:0;">
+                    <a href="{{ route('listeProf') }}" class="card-title">Mes Prof</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <div class="row">
                   <div class="col" style="margin-left:0 ;">
                     <img src="assets\img\calendrier.jpeg" alt="image-ici" width="100px">
                   </div>
@@ -38,16 +49,8 @@
               </div>
 
 
-              <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <div class="row">
-                  <div class="col" style="margin-left:0 ;">
-                    <img src="assets\img\professeur.jpeg" alt="image-ici" width="110px">
-                  </div>
-                  <div class="col-sm " style="margin-left:0 ;">
-                    <a href="#" class="card-title">Listes des professeurs</a>
-                  </div>
-                </div>
-              </div>
+              <!-- La vue principale où se trouve le bouton "Liste des professeurs" -->
+
 
               <div class="alert alert-dark alert-dismissible fade show" role="alert">
                 <div class="row">
@@ -63,42 +66,49 @@
               </div>
 
             </div>
-            <h1>Top teachers</h1>
+            <h2 class="text-center fw-bold">Top teachers</h2>
             <!-- Teachers -->
-            <div class="row row-cols-1 row-cols-md-5 g-2">
-              <div class="col">
+            <div class="row row-cols-1 row-cols-md-5 g-2 text-center">
+
+            <div class="col text-center">
                 <div class="card h-100  mb-0">
-                  <img src="assets\img\p4.jpeg" class="card-img-top" alt="...">
-                  <h6 class="fw-bold">Mme SARR</h6>
-                  <p>Prof HG</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100  mb-0">
-                  <img src="assets\img\p1.jpeg" class="card-img-top" alt="...">
+                  <img src="assets\img\profile-img.jpg" class="card-img-top" alt="...">
+                  <br>
                   <h6 class="fw-bold">Mr DIOP</h6>
-                  <p>Prof SVT</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 fw-100  mb-0">
-                  <img src="assets\img\p3.jpeg" class="card-img-top" alt="...">
-                  <h6 class="fw-bold">Mme SAMB</h6>
-                  <p>Prof Anglais</p>
+                  <p>Prof PHP</p>
                 </div>
               </div>
               <div class="col">
                 <div class="card h-100  mb-0">
-                  <img src="assets\img\p4.jpeg" class="card-img-top" alt="...">
-                  <h6 class="fw-bold">Mme DIATTA</h6>
-                  <p>Prof Francais</p>
+                  <img src="assets\img\p5.jpg" class="card-img-top" alt="...">
+                  <br>
+                  <h6 class="fw-bold">Mme SARR</h6>
+                  <p>Prof Javascript</p>
                 </div>
               </div>
-              <div class="col">
+              
+              <div class="col text-center">
+                <div class="card h-100 fw-100  mb-0">
+                  <img src="assets\img\messages-3.jpg" class="card-img-top" alt="...">
+                  <br>
+                  <h6 class="fw-bold">Mr Sene</h6>
+                  <p>Prof HTML & CSS</p>
+                </div>
+              </div>
+              <div class="col text-center">
+                <div class="card h-100  mb-0">
+                  <img src="assets\img\messages-2.jpg" class="card-img-top" alt="...">
+                  <br>
+                  <h6 class="fw-bold">Mme DIATTA</h6>
+                  <p>Prof Laravel</p>
+                </div>
+              </div>
+              <div class="col text-center">
                 <div class="card h-100 mb-0">
-                  <img src="assets\img\p1.jpeg" class="card-img-top" alt="...">
-                  <h6 class="fw-bold">Mr SECK</h6>
-                  <p>Prof Maths</p>
+                  <img src="assets\img\messages-1.jpg" class="card-img-top" alt="...">
+                  <br>
+                  <h6 class="fw-bold">Mme Seck</h6>
+                  <p>Prof C++</p>
                 </div>
               </div>
 
@@ -275,7 +285,7 @@
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4 mb-O">
-                  <img src="assets\img\p5.jpg"  class="img-fluid rounded-start " alt="...">
+                  <img src="assets\img\p5.jpg" class="img-fluid rounded-start " alt="...">
                 </div>
                 <div class="col-md-8 ">
                   <div class="card-body">
@@ -290,7 +300,7 @@
               </div>
             </div>
             <style>
-              i{
+              i {
                 color: goldenrod;
                 font-size: small;
               }

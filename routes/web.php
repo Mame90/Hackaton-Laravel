@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\CourseController;
 
 use function PHPSTORM_META\type;
@@ -190,11 +191,19 @@ Route::middleware(['auth'])->group(function () {
 
 
 
-
 Route::get('/mescours', [CourseController::class, 'mescours'])->name('mescours');
 
 
 
+Route::get('/liste-professeurs', [TeacherController::class, 'listeProfesseurs'])->name('listeProf');
+
+
+
+
+Route::get('/voir-cours/{id}', [CourseController::class, 'voirCours'])->name('voir_cours');
+
+
+//-------------------------------------------------------
 // ***********************************************************************************************************
 
 require __DIR__.'/auth.php';
